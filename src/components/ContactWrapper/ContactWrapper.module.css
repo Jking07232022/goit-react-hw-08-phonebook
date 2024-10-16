@@ -1,0 +1,61 @@
+.contactWrapper {
+  display: flex;
+  flex-direction: column;
+  background-color: aqua;
+  padding: 40px;
+  width: 400px;
+  margin: 0 auto;
+  border-radius: 20px;
+  min-height: 300px;
+  border: 1px solid rgb(139, 127, 127);
+}
+
+.searchWrapper {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+
+.searchInput {
+  width: 100%;
+  padding: 10px;
+  border-radius: 25px;
+  border: 1px solid;
+}
+
+.searchInput:focus {
+  outline-color: gray;
+}
+
+.contactItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin: 0 auto;
+  padding: 2px;
+  text-transform: capitalize;
+}
+
+.contactItem > * {
+  width: calc(100% / 3);
+}
+
+.contactItem button {
+  padding: 6px;
+  border: 1px solid;
+  border-radius: 4px;
+  width: 65px;
+}
+
+.contactItem button:hover,
+.contactItem button:focus {
+  background-color: gray;
+  box-shadow: 0 0 8px 4px #ffcfcf;
+  border: 1px solid white;
+  color: white;
+  cursor: pointer;
+  outline: none;
+}

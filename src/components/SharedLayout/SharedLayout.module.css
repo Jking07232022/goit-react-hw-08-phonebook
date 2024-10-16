@@ -1,0 +1,201 @@
+.container {
+  width: 1040px;
+  margin: 0 auto;
+}
+
+.liloWrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+}
+
+.header {
+  background-color: black;
+  box-shadow: 0 1px 4px aqua;
+  width: 100%;
+}
+
+.logo {
+  font-size: 17px;
+  font-weight: 600;
+}
+
+a {
+  display: inline-block;
+  padding: 10px 0;
+  text-decoration: none;
+  color: #f8e2e2;
+  font-weight: 500;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+  position: relative;
+  padding: 8px 0;
+  background-color: black;
+}
+
+.navWrapper {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  padding: 8px 0;
+}
+
+.navWrapper button {
+  position: absolute;
+  left: 81%;
+  border: none;
+  border-radius: 50px;
+  padding: 5px 10px;
+  background-color: #f8e2e2;
+  transition: transform 0.3s ease-in-out;
+}
+
+.navWrapper button:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+  color: white;
+  background-color: rgb(68, 68, 68);
+}
+
+.navLink:hover::after {
+  width: 100%;
+}
+
+.navLink::after,
+.active::after {
+  content: '';
+  display: block;
+  position: relative;
+  top: 3px;
+  left: 0;
+  width: 0;
+  height: 4px;
+  border-radius: 4px;
+  background-color: #f8e2e2;
+  transition: all 250ms;
+}
+
+.active::after {
+  width: 100%;
+}
+
+.section {
+  display: flex;
+  justify-content: center;
+  margin-top: 80px;
+}
+
+.navForm {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 15px;
+  width: 40%;
+  min-height: 280px;
+  padding: 20px 25px;
+  border: 1px solid rgba(128, 128, 128, 0.719);
+  background-color: aqua;
+  border-radius: 20px;
+}
+
+.navDiv,
+.navForm input {
+  width: 100%;
+}
+
+.navForm input {
+  padding: 10px;
+  border-radius: 25px;
+  border: 1px solid;
+  font-size: 14px;
+  background-color: #f8e2e2;
+}
+.navForm button {
+  padding: 10px 30px;
+  border: 1px solid;
+  border-radius: 25px;
+  font-size: 14px;
+  background-color: #f8e2e2;
+  color: black;
+  transition: transform 0.3s ease-in-out;
+}
+.onFocus {
+  top: -10px !important;
+  transition: all 250ms;
+  font-size: 18px;
+  color: black !important;
+  background-color: #f8e2e2;
+  padding: 0 10px;
+}
+
+.navForm input {
+  padding-left: 35px;
+}
+
+.navForm input:focus {
+  outline-color: gray;
+}
+
+.navForm button:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  background-color: black;
+  color: #f8e2e2;
+  font-weight: 500;
+}
+
+.navForm span a {
+  padding: 0 0 5px 0;
+  color: rgb(0, 0, 0);
+}
+
+.navForm span a:hover {
+  padding: 0 0 5px 0;
+  color: rgb(0, 0, 0);
+  text-decoration: underline;
+}
+
+.navDiv {
+  position: relative;
+}
+
+.navDiv label {
+  position: absolute;
+  top: 10px;
+  left: 35px;
+  color: grey;
+  transition: all 250ms;
+  cursor: text;
+  font-size: 14px;
+}
+
+.navDiv svg {
+  position: absolute;
+  top: 12px;
+  left: 10px;
+}
+
+.titleWrapper {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  gap: 4px;
+}
+
+.navIcon svg {
+  width: 20px;
+  height: 20px;
+}
+
+.contentWrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
